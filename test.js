@@ -22,15 +22,25 @@
 
 
 // 2.
-const groceries = ['milk','bread','eggs','flour','cheese','sugar'];
+// const groceries = ['milk','bread','eggs','flour','cheese','sugar'];
 
-const searchForItem = (items, targetItem) => {
-  for(let i = 0; i<items.length; i++) {
-    if(items[i] === targetItem) {
-      console.log(`found the ${items[i]} in index ${i}`)
-    }
-  }
-}
+// const searchForItem = (items, targetItem) => {
+//   for(let i = 0; i<items.length; i++) {
+//     if(items[i] === targetItem) {
+//       console.log(`found the ${items[i]} in index ${i}`)
+//     }
+//   }
+// }
 
-searchForItem(groceries, "eggs")
+// searchForItem(groceries, "eggs")
 
+
+
+
+
+// 3.
+const numbers= [1,2,3,4,5];
+
+const getElement = (arr, index) => arr[index];
+
+console.log(getElement(numbers,3))
