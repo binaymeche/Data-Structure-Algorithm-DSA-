@@ -25,13 +25,12 @@
 const groceries = ['milk','bread','eggs','flour','cheese','sugar'];
 
 const searchForItem = (items, targetItem) => {
-  for(item of items) {
-    if(item === targetItem){
-      console.log(`Item founded ${targetItem}`)
+  for(let i = 0; i<items.length; i++) {
+    if(items[i] === targetItem) {
+      console.log(`found the ${items[i]} in index ${i}`)
     }
-    // console.log(items);
   }
 }
 
-searchForItem(groceries, "flour")
+searchForItem(groceries, "eggs")
 
