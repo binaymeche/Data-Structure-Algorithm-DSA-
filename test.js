@@ -1,74 +1,66 @@
-// custom array
-class MyArray {
-  constructor() {
-    this.length = 0;
-    this.data = {};
-  }
+// const s = ["flower","flow", "flight"];
 
-  // custom push method
-  push(item) {
-    this.data[this.length] = item;
-    this.length++;
-    return this.length;
-  }
+// const longestCommonPrefix = (strs) => {
+//   strs.sort();
+//   let s = "";
+//   let i = 0;
+//   let length = strs.length;
 
-  // custom get method
-  get(index) {
-    return this.data[index];
-  }
+//   while (i < strs[0].length) {
+//     if(strs[0][i] === strs[length - 1][i]){
+//       s += strs[0][i];
+//       i++;
+//     }
+//       else{
+//           break;
+//   } 
+//   }
+//   return s;
+// }
 
-  // custom pop method
-  pop() {
-    const lastElement = this.data[this.length - 1];
-    delete this.data[this.length - 1];
-    this.length--;
-    return lastElement;
-  }
 
-  // custom shift method
-  shift() {
-    const firstElement = this.data[this.length - this.length];
+// let word = longestCommonPrefix(s);
 
-    // re-indexing
-    for (let i = 0; i < this.length; i++) {
-      this.data[i] = this.data[i + 1];
-    }
 
-    delete this.data[this.length -1]
-    this.length--;
+// const newSort = s.sort((a,b) => b.localeCompare(a));
+// console.log(newSort);
 
-  }
+// const nums = [1,2,3,4,5,6,7,8,8,7,65]
+// const sorted = nums.sort((a,b) => b -a)
+// console.log(sorted)
 
-  // custom delete by index
-  deleteByIndex(index){
-    const item = this.data[index]
-    
-    for(let i=index; i<this.length -1 ; i++){
-      this.data[i] = this.data[i+1];
-    }
 
-      delete this.data[this.length -1]
-      this.length--;
-      return item;
-  }
+
+
+// const isPalindrome = (value) => {
+
+//   const stringCon = String(value);
+//   const length = stringCon.length-1;
+//   let reverse = ""
+//   for(let i = length; i >= 0; i--) {
+//     // console.log(stringCon[i])
+//     reverse += stringCon[i];    
+//   }
+
+
+//   if(stringCon === reverse) {
+//   return true
+//   }else {
+//   return false
+//   }
+
+// }
+
+// console.log(isPalindrome(121))
+
+
+
+
+const m1 = [1,2,4]
+const m2 = [1,3,4]
+
+const merge = (m1,m2) => {
+m1
 }
 
-const myNewArray = new MyArray();
-myNewArray.push("binay");
-myNewArray.push("buddhi");
-myNewArray.push("Sapan");
-myNewArray.push("Max");
-
-
-// Use of custom methods\
-//
-//
-// myNewArray.get(2)
-
-// console.log(myNewArray.pop())
-
-// myNewArray.shift();
-
-// myNewArray.deleteByIndex(2)
-
-console.log(myNewArray);
+console.log(merge(m1,m2))

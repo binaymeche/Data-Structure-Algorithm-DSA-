@@ -72,3 +72,4 @@ myNewArray.push("Max");
 // myNewArray.deleteByIndex(2)
 
 console.log(myNewArray);
+
